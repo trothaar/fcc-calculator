@@ -1,2 +1,5 @@
 # fcc-calculator
-Free Code Camp JavaScript/jQuery Calculator
+
+Free Code Camp Challenge No. 293
+Build a JavaScript Calculator
+
