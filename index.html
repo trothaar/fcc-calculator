@@ -1,0 +1,99 @@
+<!--
+ Teresa Rothaar
+ Free Code Camp Challenge #293
+ Build a JavaScript Calculator
+
+ Calculator should be funtionally similar to
+ https://codepen.io/FreeCodeCamp/full/rLJZrA/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Free Code Camp JavaScript Calculator</title>
+  <meta charset="utf-8">
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="calculator.css">
+
+<!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Font Awesome -->
+<script src="https://use.fontawesome.com/16f8eaceda.js"></script>
+
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+<div class = "text-center"><h1>Free Code Camp jQuery Calculator</h1>
+</div>
+
+<!-- This is where we will be outputting our data -->
+<div class = "calcOutput">
+<span id="steps">0</span>
+<hr/>
+</div>
+<!-- Main part of the calculator, where the buttons are -->
+<div class = "text-center" id="calculator">
+<!-- Delete all the values in the calc up to that point -->
+<a class = "btn btn-danger" id = "deleteAll">AC</a>
+<!-- Delete last value -->
+<a class = "btn btn-danger" id = "backOne">CE</a>
+<!-- Divide -->
+<a class = "btn btn-primary" id = "divide">/</a>
+<!--Multiply-->
+<a class = "btn btn-primary" id = "multiply">*</a>
+<br/>
+<!-- 7, 8, 9, and minus -->
+<a class = "btn btn-primary" id = "7">7</a>
+<a class = "btn btn-primary" id = "8">8</a>
+<a class = "btn btn-primary" id = "9">9</a>
+<a class = "btn btn-primary" id = "minus">-</a>
+<br/>
+<!-- 4, 5, 6, and plus -->
+<a class = "btn btn-primary" id = "4">4</a>
+<a class = "btn btn-primary" id = "5">5</a>
+<a class = "btn btn-primary" id = "6">6</a>
+<a class = "btn btn-primary" id = "plus">+</a>
+<br/>
+<!-- 1, 2, 3, and decimal -->
+<a class = "btn btn-primary" id = "1">1</a>
+<a class = "btn btn-primary" id = "2">2</a>
+<a class = "btn btn-primary" id = "3">3</a>
+<a class = "btn btn-primary" id = "decimal">.</a>
+<br/>
+<!-- Zero and Equals -->
+<a class = "btn btn-primary bigButton" id = "zero">0</a>
+<a class = "btn btn-primary bigButton" id = "equals">=</a>
+<br/>
+</div>
+
+
+
+<!-- Javascript -->
+<script src="calculator.js"></script>
+
+<div id="footer">
+ <div class="container-fluid text-center">
+  <p>By Teresa Rothaar</p>
+    <a href="mailto:trothaarwork@gmail.com">
+      <i class="fa fa-envelope fa-fw"></i>
+    </a>
+    <a href="https://github.com/trothaar" target='_blank'>
+      <i class="fa fa-github fa-fw"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/teresarothaar" target='_blank'>
+      <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="http://www.freecodecamp.com/trothaar" target='_blank'>
+  (<i class="fa fa-fire fa-fw"></i>)
+</a>
+</div></div>
+</body>
+</html>
