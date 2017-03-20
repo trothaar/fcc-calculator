@@ -38,8 +38,8 @@
 /* Recall that all the buttons are anchor tags */
 a{
   margin: 5px;
-  width: 2.6vw;
-  height: 2.6vw;
+  width: 36px;
+  height: 35px;
 }
 
 .bigButton{
