@@ -5,6 +5,8 @@
 
  Calculator should be funtionally similar to
  https://codepen.io/FreeCodeCamp/full/rLJZrA/
+
+ Much thanks to Dylan Israel at Coding360 for his great tutorial!
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -34,48 +36,49 @@
 </head>
 <body id="bg-color">
 
-<div class = "text-center"><h1>Free Code Camp jQuery Calculator</h1>
-</div>
-
-<!-- This is where we will be outputting our data -->
+<!-- Begin Calculator -->
+<div class = "container" id="calculator">
+<div class = "text-center" id="header">FCC jQuery Calculator</div>
+<!-- Entry Box -->
 <div id = "calcOutput">
 <span id="steps">0
 </span>
 <hr/>
 </div>
 <!-- Main part of the calculator, where the buttons are -->
-<div class = "text-center" id="calculator">
+<div class = "text-center" id="numberPad">
 <!-- Delete all the values in the calc up to that point -->
 <a class = "btn btn-danger" id = "deleteAll">AC</a>
 <!-- Delete last value -->
 <a class = "btn btn-danger" id = "backOne">CE</a>
 <!-- Divide -->
-<a class = "btn btn-primary" id = "/">/</a>
+<a class = "btn btn-warning" id = "/">/</a>
 <!--Multiply-->
-<a class = "btn btn-primary" id = "*">*</a>
+<a class = "btn btn-warning" id = "*">*</a>
 <br/>
 <!-- 7, 8, 9, and minus -->
 <a class = "btn btn-primary" id = "7">7</a>
 <a class = "btn btn-primary" id = "8">8</a>
 <a class = "btn btn-primary" id = "9">9</a>
-<a class = "btn btn-primary" id = "-">-</a>
+<a class = "btn btn-warning" id = "-">-</a>
 <br/>
 <!-- 4, 5, 6, and plus -->
 <a class = "btn btn-primary" id = "4">4</a>
 <a class = "btn btn-primary" id = "5">5</a>
 <a class = "btn btn-primary" id = "6">6</a>
-<a class = "btn btn-primary" id = "+">+</a>
+<a class = "btn btn-warning" id = "+">+</a>
 <br/>
 <!-- 1, 2, 3, and decimal -->
 <a class = "btn btn-primary" id = "1">1</a>
 <a class = "btn btn-primary" id = "2">2</a>
 <a class = "btn btn-primary" id = "3">3</a>
-<a class = "btn btn-primary" id = ".">.</a>
+<a class = "btn btn-warning" id = ".">.</a>
 <br/>
 <!-- Zero and Equals -->
 <a class = "btn btn-primary bigButton" id = "0">0</a>
-<a class = "btn btn-primary bigButton" id = "total">=</a>
+<a class = "btn btn-warning bigButton" id = "total">=</a>
 <br/>
+</div>
 </div>
 
 
@@ -83,8 +86,7 @@
 <!-- Javascript -->
 <script src="calculator.js"></script>
 
-<div id="footer">
- <div class="container-fluid text-center">
+ <div class="container-fluid text-center" id="footer">
   <p>By Teresa Rothaar</p>
     <a href="mailto:trothaarwork@gmail.com">
       <i class="fa fa-envelope fa-fw"></i>
@@ -98,6 +100,6 @@
     <a href="http://www.freecodecamp.com/trothaar" target='_blank'>
   (<i class="fa fa-fire fa-fw"></i>)
 </a>
-</div></div>
+</div>
 </body>
 </html>
